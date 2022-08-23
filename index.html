@@ -13,7 +13,30 @@
 <body>
   <!-- MAIN CONTAINER -->
   <main class="h-full">
-
+    <!-- HEADER SECTION START -->
+    <header class="fixed top-0 z-30 w-full border-b-2 bg-purple-50" x-data="{
+      headerScroll: false
+    }" :class="headerScroll ? 'border-purple-100' : 'border-transparent'">
+      <div
+        class="container px-8 md:px-12 lg:px-24 flex items-center gap-5 xl:gap-8 transition-all ease-linear duration-150"
+        :class="headerScroll ? 'h-12 md:h-16' : 'h-16 xl:h-24'" @scroll.window="
+          headerScroll = window.pageYOffset > 10 ? true : false
+        ">
+        <!-- LOGO BOX -->
+        <div class="flex flex-grow flex-shrink-0 h-2/5 xl:flex-grow-0 xl:h-6 xl:-mt-2">
+          <a class="flex h-full" href="#">
+            <img src="images/download.svg" alt="Proton Logo" class="inline-block w-auto h-auto max-w-full max-h-full">
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="mt-16 xl:mt-24"></div>
+    <!-- HEADER SECTION END -->
+    <!-- MOCK SECTIONS -->
+    <section class="h-screen bg-red-700"></section>
+    <section class="h-screen bg-purple-600"></section>
+    <section class="h-screen bg-blue-700"></section>
+    <section class="h-screen bg-violet-900"></section>
   </main>
 </body>
 
