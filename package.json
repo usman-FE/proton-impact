@@ -9,6 +9,10 @@
   },
   "author": "Usman",
   "license": "ISC",
-  "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "alpinejs": "^3.10.3"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
 }

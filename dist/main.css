@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.1.5 | MIT License | https://tailwindcss.com
+! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -349,13 +349,6 @@ textarea {
 */
 
 input::-moz-placeholder, textarea::-moz-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -1296,7 +1289,6 @@ video {
 .select-none {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -1661,6 +1653,11 @@ video {
 .bg-\[\#0B2C3D\] {
   --tw-bg-opacity: 1;
   background-color: rgb(11 44 61 / var(--tw-bg-opacity));
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/images\/properties\.webp\'\)\] {
@@ -2208,22 +2205,12 @@ video {
   color: rgb(73 73 73 / var(--tw-text-opacity));
 }
 
-.placeholder\:text-\[\#494949\]:-ms-input-placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(73 73 73 / var(--tw-text-opacity));
-}
-
 .placeholder\:text-\[\#494949\]::placeholder {
   --tw-text-opacity: 1;
   color: rgb(73 73 73 / var(--tw-text-opacity));
 }
 
 .placeholder\:text-\[\#E2E2E2\]::-moz-placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(226 226 226 / var(--tw-text-opacity));
-}
-
-.placeholder\:text-\[\#E2E2E2\]:-ms-input-placeholder {
   --tw-text-opacity: 1;
   color: rgb(226 226 226 / var(--tw-text-opacity));
 }
