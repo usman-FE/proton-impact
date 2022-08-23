@@ -1,0 +1,14 @@
+{
+  "name": "proton-impact",
+  "version": "1.0.0",
+  "description": "Proton | Impact",
+  "main": "index.html",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/style.css -o ./dist/main.css",
+    "start": "npx tailwindcss -i ./src/style.css -o ./dist/main.css --watch"
+  },
+  "author": "Usman",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {}
+}
