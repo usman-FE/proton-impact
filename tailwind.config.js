@@ -16,7 +16,7 @@ module.exports = {
 // PURPLE BTN OUTLINE #6d4aff
 
 // CONTAINER
-// container px-8 md:px-12 lg:px-24 mx-auto text-[#494b7a]
+// container max-w-[120rem] px-8 md:px-12 lg:px-24 mx-auto text-[#494b7a]
 // container grid gap-x-6 gap-y-12 md:gap-x-10 xl:gap:x-12
 
 
