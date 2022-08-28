@@ -18,7 +18,7 @@
       headerScroll: false
     }" :class="headerScroll ? 'border-purple-100' : 'border-transparent'">
       <div
-        class="container px-8 md:px-12 lg:px-24 mx-auto text-[#494b7a] flex items-center gap-5 xl:gap-8 transition-all ease-linear duration-150"
+        class="container max-w-[120rem] px-8 md:px-12 lg:px-24 mx-auto text-[#494b7a] flex items-center gap-5 xl:gap-8 transition-all ease-linear duration-150"
         :class="headerScroll ? 'h-12 md:h-16' : 'h-16 xl:h-24'" @scroll.window="
           headerScroll = window.pageYOffset > 10 ? true : false
         ">
@@ -654,6 +654,33 @@
     </header>
     <div class="mt-16 xl:mt-24"></div>
     <!-- HEADER SECTION END -->
+    <!-- HERO SECTION START -->
+    <section class="bg-[#f7f5ff]">
+      <div
+        class="px-8 md:px-12 lg:px-24 mx-auto text-[#494b7a] grid gap-x-6 gap-y-12 md:gap-x-10 xl:gap:x-12 grid-cols-1 lg:grid-cols-12 xl:grid-cols-12 items-center lg:pr-0">
+        <!-- HERO TEXT BOX -->
+        <div class="text-center lg:col-start-1 lg:col-span-6 xl:col-span-5 2xl:col-start-2 lg:text-left mt-10 lg:mt-0">
+          <!-- HERO HEADING -->
+          <h1
+            class="lg:max-w-[38rem] mx-auto lg:mx-0 mb-6 max-w-[33.75rem] text-3xl sm:text-4xl md:text-[2.75rem] lg:text-[3.5rem] !leading-none text-[#372580]">
+            <span class="font-thin">We advance society by</span> advancing freedom
+          </h1>
+          <!-- HERO DESCRIPTION -->
+          <p class="lg:max-w-[37rem] mx-auto lg:mx-0 mb-6 max-w-[33.75rem] text-xl text-[#372580]">
+            At Proton, our social mission is at the heart of all we do. We believe in building an internet that works
+            for people and not just for profit.
+          </p>
+        </div>
+        <!-- HERO IMAGE BOX -->
+        <figure class="lg:col-start-7 lg:col-span-7 xl:lg-col-span-6">
+          <img src="images/hero-image.webp" alt="hero-image">
+          <!-- SCREEN READER TEXT -->
+          <figcaption class="opacity-0 absolute w-1 overflow-hidden p-0">Proton makes a social impact by improving
+            access to privacy</figcaption>
+        </figure>
+      </div>
+    </section>
+    <!-- HERO SECTION END -->
     <!-- MOCK SECTIONS -->
     <section class="h-screen bg-red-700"></section>
     <section class="h-screen bg-[#5c3be7]"></section>

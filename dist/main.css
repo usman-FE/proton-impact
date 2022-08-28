@@ -719,6 +719,14 @@ video {
   margin-top: 4rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -733,6 +741,10 @@ video {
 
 .inline-flex {
   display: inline-flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -843,12 +855,32 @@ video {
   width: 1.75rem;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
 .max-w-full {
   max-width: 100%;
 }
 
 .max-w-3xl {
   max-width: 48rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.max-w-\[33\.75rem\] {
+  max-width: 33.75rem;
+}
+
+.max-w-\[33\.74rem\] {
+  max-width: 33.74rem;
+}
+
+.max-w-\[120rem\] {
+  max-width: 120rem;
 }
 
 .flex-1 {
@@ -889,6 +921,10 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -942,6 +978,15 @@ video {
 
 .gap-y-1 {
   row-gap: 0.25rem;
+}
+
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
 }
 
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1063,11 +1108,6 @@ video {
   background-color: rgb(76 29 149 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#e2dbff\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 219 255 / var(--tw-bg-opacity));
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -1082,6 +1122,10 @@ video {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-8 {
@@ -1156,6 +1200,11 @@ video {
   line-height: 1.5rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -1164,8 +1213,28 @@ video {
   font-weight: 700;
 }
 
+.font-thin {
+  font-weight: 100;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
+.leading-normal {
+  line-height: 1.5;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.\!leading-none {
+  line-height: 1 !important;
 }
 
 .text-\[\#494b7a\] {
@@ -1209,6 +1278,10 @@ video {
 
 .opacity-50 {
   opacity: 0.5;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .shadow-sm {
@@ -1344,6 +1417,11 @@ video {
   .sm\:w-12 {
     width: 3rem;
   }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1367,16 +1445,100 @@ video {
     gap: 1rem;
   }
 
+  .md\:gap-x-10 {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
+  }
+
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
   }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-\[2\.75rem\] {
+    font-size: 2.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .lg\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
+  .lg\:col-start-1 {
+    grid-column-start: 1;
+  }
+
+  .lg\:col-start-7 {
+    grid-column-start: 7;
+  }
+
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:max-w-md {
+    max-width: 28rem;
+  }
+
+  .lg\:max-w-\[37\.5rem\] {
+    max-width: 37.5rem;
+  }
+
+  .lg\:max-w-\[38rem\] {
+    max-width: 38rem;
+  }
+
+  .lg\:max-w-\[37rem\] {
+    max-width: 37rem;
+  }
+
+  .lg\:max-w-\[39rem\] {
+    max-width: 39rem;
+  }
+
+  .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
   .lg\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .lg\:pr-0 {
+    padding-right: 0px;
+  }
+
+  .lg\:text-left {
+    text-align: left;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-\[3\.5rem\] {
+    font-size: 3.5rem;
+  }
+
+  .lg\:text-\[59\.5px\] {
+    font-size: 59.5px;
   }
 }
 
@@ -1413,6 +1575,10 @@ video {
     .xl\:container {
       max-width: 1536px;
     }
+  }
+
+  .xl\:col-span-5 {
+    grid-column: span 5 / span 5;
   }
 
   .xl\:mx-6 {
@@ -1497,6 +1663,10 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .xl\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
   .xl\:flex-col {
     flex-direction: column;
   }
@@ -1573,6 +1743,10 @@ video {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:col-start-2 {
+    grid-column-start: 2;
+  }
+
   .\32xl\:-ml-8 {
     margin-left: -2rem;
   }
