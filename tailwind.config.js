@@ -4,10 +4,14 @@ module.exports = {
   plugins: [],
 };
 
+// purple-900 #1b1340
 // purple-800 #372580
 // purple-600 #5c3be7
+// purple-700 #4a2dc5
 // purple-500 #6d4aff
+// purple-200 #c5b7ff
 // purple-100 #e2dbff
+// purple-50 #efebff
 // purple-25 #f7f5ff
 // Gray-900 #111827
 // Gray-400 #9ca3af

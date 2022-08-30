@@ -500,7 +500,7 @@
                           Back / <span class="text-[#9ca3af]">&nbsp;Who we are</span>
                         </button>
                         <!-- SIDEMENU CONTENT -->
-                        <div class="xl:grid grid-cols-2">
+                        <div class="xl:grid grid-cols-2 bg-white">
                           <!-- TOP CONTENT BOX -->
                           <div
                             class="space-y-3 xl:space-y-0 -ml-4 xl:ml-0 py-5 xl:p-6 xl:flex xl:flex-col xl:justify-end">
@@ -1450,6 +1450,479 @@
       </div>
     </section>
     <!-- CREATE ACCOUNT CARD SECTION END -->
+    <!-- FOOTER START -->
+    <footer class="pt-20 pb-12 bg-[#f7f5ff]">
+      <div class="container max-w-[120rem] px-8 md:px-12 lg:px-24 mx-auto text-[#494b7a]">
+        <!-- FOOTER PRIMARY 1 -->
+        <div
+          class="grid gap-x-6 gap-y-12 xl:gap:x-12 grid-cols-1 md:grid-cols-3 lg:grid-cols-5 md:gap-x-6 lg:gap-x-3 xl:gap-x-4">
+          <!-- LOGO & SOCIALS -->
+          <div>
+            <div class="w-20">
+              <a aria-current="page" class="" href="#">
+                <img src="images/proton-logo-2.svg" alt="Proton homepage">
+              </a>
+            </div>
+            <div class="w-40 mt-6">Proton - Privacy by default</div>
+            <div class="flex mt-5 space-x-1 h-6 ">
+              <a target="_blank" href="#"><img src="images/twitter.svg" alt="Follow us on Twitter"></a>
+              <a target="_blank" href="#"><img src="images/linkedin.svg" alt="Follow us on LinkedIn"></a>
+              <a target="_blank" href="#"><img src="images/reddit.svg" alt="Follow us on Reddit"></a>
+              <a target="_blank" href="#"><img src="images/instagram.svg" alt="Follow us on Instagram"></a>
+              <a target="_blank" href="#"><img src="images/facebook.svg" alt="Follow us on Facebook"></a>
+            </div>
+          </div>
+          <!-- FOOTER MENU FOR SMALLER DEVICES -->
+          <div class="md:hidden">
+            <!-- PRODUCTS DROPDOWN -->
+            <div
+              class="border-[#e2dbff] border-0 mt-2 rounded-2xl hover:border-[#6d4aff] focus:ring-[#c5b7ff] w-full mb-10"
+              x-data="{isDropdownOpen: false}">
+              <!-- TITLE BUTTON -->
+              <button type="button"
+                class="group rounded-xl flex justify-between items-center w-full text-left focus:outline-none focus-visible:ring focus-visible:ring-[#6d4aff] focus-visible:ring-opacity-75"
+                @click="isDropdownOpen = !isDropdownOpen">
+                <span class="text-lg font-bold">Products</span>
+                <span
+                  class="bg-[#efebff] text-[#6d4aff] rounded-full group-focus:text-[#6d4aff] group-focus:bg-[#efebff] group-hover:bg-[#f7f5ff] lg:group-hover:bg-[#efebff] group-hover:text-[#6d4aff] lg:group-hover:text-[#6d4aff] group-focus-visible:bg-[#efebff] group-focus-visible:text-[#6d4aff] p-1 ml-6 self-start"
+                  aria-hidden="true">
+                  <!-- SVG OPEN -->
+                  <svg x-show="!isDropdownOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd"
+                      d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  <!-- SVG CLOSE -->
+                  <svg x-show="isDropdownOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor" aria-hidden="true" data-testid="dynamic-hero-icon" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd">
+                    </path>
+                  </svg>
+                </span>
+              </button>
+              <!-- PRODUCT MENU -->
+              <div class="py-6 px-6 text-base flex-col space-y-6 items-start flex" x-show="isDropdownOpen">
+                <ul class="list-disc">
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Proton Mail
+                    </a>
+                  </li>
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Proton Calendar
+                    </a>
+                  </li>
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Proton Drive
+                    </a>
+                  </li>
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Proton VPN
+                    </a>
+                  </li>
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Proton for Business
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- PRIVACY AND COMMUNITY DROPDOWN -->
+            <div
+              class="border-[#e2dbff] border-0 mt-2 rounded-2xl hover:border-[#6d4aff] focus:ring-[#c5b7ff] w-full mb-10"
+              x-data="{isDropdownOpen: false}">
+              <!-- TITLE BUTTON -->
+              <button type="button"
+                class="group rounded-xl flex justify-between items-center w-full text-left focus:outline-none focus-visible:ring focus-visible:ring-[#6d4aff] focus-visible:ring-opacity-75"
+                @click="isDropdownOpen = !isDropdownOpen">
+                <span class="text-lg font-bold">Privacy and community</span>
+                <span
+                  class="bg-[#efebff] text-[#6d4aff] rounded-full group-focus:text-[#6d4aff] group-focus:bg-[#efebff] group-hover:bg-[#f7f5ff] lg:group-hover:bg-[#efebff] group-hover:text-[#6d4aff] lg:group-hover:text-[#6d4aff] group-focus-visible:bg-[#efebff] group-focus-visible:text-[#6d4aff] p-1 ml-6 self-start"
+                  aria-hidden="true">
+                  <!-- SVG OPEN -->
+                  <svg x-show="!isDropdownOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd"
+                      d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  <!-- SVG CLOSE -->
+                  <svg x-show="isDropdownOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor" aria-hidden="true" data-testid="dynamic-hero-icon" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd">
+                    </path>
+                  </svg>
+                </span>
+              </button>
+              <!-- PRIVACY AND COMMUNITY MENU -->
+              <div class="py-6 px-6 text-base flex-col space-y-6 items-start flex" x-show="isDropdownOpen">
+                <ul class="list-disc">
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Privacy and security
+                    </a>
+                  </li>
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Switch to Proton
+                    </a>
+                  </li>
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Community
+                    </a>
+                  </li>
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Open source
+                    </a>
+                  </li>
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Pricing
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- COMPANY DROPDOWN -->
+            <div
+              class="border-[#e2dbff] border-0 mt-2 rounded-2xl hover:border-[#6d4aff] focus:ring-[#c5b7ff] w-full mb-10"
+              x-data="{isDropdownOpen: false}">
+              <!-- TITLE BUTTON -->
+              <button type="button"
+                class="group rounded-xl flex justify-between items-center w-full text-left focus:outline-none focus-visible:ring focus-visible:ring-[#6d4aff] focus-visible:ring-opacity-75"
+                @click="isDropdownOpen = !isDropdownOpen">
+                <span class="text-lg font-bold">Company</span>
+                <span
+                  class="bg-[#efebff] text-[#6d4aff] rounded-full group-focus:text-[#6d4aff] group-focus:bg-[#efebff] group-hover:bg-[#f7f5ff] lg:group-hover:bg-[#efebff] group-hover:text-[#6d4aff] lg:group-hover:text-[#6d4aff] group-focus-visible:bg-[#efebff] group-focus-visible:text-[#6d4aff] p-1 ml-6 self-start"
+                  aria-hidden="true">
+                  <!-- SVG OPEN -->
+                  <svg x-show="!isDropdownOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd"
+                      d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                      clip-rule="evenodd">
+                    </path>
+                  </svg>
+                  <!-- SVG CLOSE -->
+                  <svg x-show="isDropdownOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor" aria-hidden="true" data-testid="dynamic-hero-icon" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd">
+                    </path>
+                  </svg>
+                </span>
+              </button>
+              <!-- COMPANY MENU -->
+              <div class="py-6 px-6 text-base flex-col space-y-6 items-start flex" x-show="isDropdownOpen">
+                <ul class="list-disc">
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      About us
+                    </a>
+                  </li>
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Team
+                    </a>
+                  </li>
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Impact
+                    </a>
+                  </li>
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Careers<span
+                        class="px-4 py-1 ml-1 rounded-full bg-purple-100 text-[#5c3be7] uppercase text-xs font-bold">We're
+                        hiring</span>
+                    </a>
+                  </li>
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Shop
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- CONNECT DROPDOWN -->
+            <div
+              class="border-[#e2dbff] border-0 mt-2 rounded-2xl hover:border-[#6d4aff] focus:ring-[#c5b7ff] w-full mb-10"
+              x-data="{isDropdownOpen: false}">
+              <!-- TITLE BUTTON -->
+              <button type="button"
+                class="group rounded-xl flex justify-between items-center w-full text-left focus:outline-none focus-visible:ring focus-visible:ring-[#6d4aff] focus-visible:ring-opacity-75"
+                @click="isDropdownOpen = !isDropdownOpen">
+                <span class="text-lg font-bold">Connect</span>
+                <span
+                  class="bg-[#efebff] text-[#6d4aff] rounded-full group-focus:text-[#6d4aff] group-focus:bg-[#efebff] group-hover:bg-[#f7f5ff] lg:group-hover:bg-[#efebff] group-hover:text-[#6d4aff] lg:group-hover:text-[#6d4aff] group-focus-visible:bg-[#efebff] group-focus-visible:text-[#6d4aff] p-1 ml-6 self-start"
+                  aria-hidden="true">
+                  <!-- SVG OPEN -->
+                  <svg x-show="!isDropdownOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd"
+                      d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                      clip-rule="evenodd">
+                    </path>
+                  </svg>
+                  <!-- SVG CLOSE -->
+                  <svg x-show="isDropdownOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor" aria-hidden="true" data-testid="dynamic-hero-icon" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd">
+                    </path>
+                  </svg>
+                </span>
+              </button>
+              <!-- CONNECT MENU -->
+              <div class="py-6 px-6 text-base flex-col space-y-6 items-start flex" x-show="isDropdownOpen">
+                <ul class="list-disc">
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Blog
+                    </a>
+                  </li>
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Help and support
+                    </a>
+                  </li>
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Partners and affiliates
+                    </a>
+                  </li>
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Press and media
+                    </a>
+                  </li>
+                  <li class="my-4">
+                    <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                      Contact us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- PRODUCTS FOOTER MENU -->
+          <div class="hidden md:block">
+            <span class="text-[#372580] text-[1.125rem] leading-[1.55] font-bold mb-8">Products</span>
+            <ul>
+              <li class="my-4">
+                <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">Proton Mail</a>
+              </li>
+              <li class="my-4">
+                <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">Proton
+                  Calendar
+                </a>
+              </li>
+              <li class="my-4">
+                <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                  Proton
+                  Drive
+                </a>
+              </li>
+              <li class="my-4">
+                <a target="_blank" href="#" class="text-[#372580] hover:text-[#6d4aff] transition-all">Proton VPN</a>
+              </li>
+              <li class="my-4"><a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                  Proton for
+                  Business
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- PRIVACY AND COMMUNITY FOOTER MENU -->
+          <div class="hidden md:block">
+            <span class="text-[#372580] text-[1.125rem] leading-[1.55] font-bold mb-8">Privacy and community</span>
+            <ul>
+              <li class="my-4">
+                <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">Privacy and security</a>
+              </li>
+              <li class="my-4">
+                <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">Switch to Proton
+                </a>
+              </li>
+              <li class="my-4">
+                <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                  Community
+                </a>
+              </li>
+              <li class="my-4">
+                <a target="_blank" href="#" class="text-[#372580] hover:text-[#6d4aff] transition-all">Open source
+                </a>
+              </li>
+              <li class="my-4"><a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                  Pricing
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- COMPANY FOOTER MENU -->
+          <div class="hidden md:block">
+            <span class="text-[#372580] text-[1.125rem] leading-[1.55] font-bold mb-8">Company</span>
+            <ul>
+              <li class="my-4">
+                <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">About us</a>
+              </li>
+              <li class="my-4">
+                <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">Team
+                </a>
+              </li>
+              <li class="my-4">
+                <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                  Impact
+                </a>
+              </li>
+              <li class="my-4">
+                <a target="_blank" href="#" class="text-[#372580] hover:text-[#6d4aff] transition-all">Careers
+                  <span
+                    class="px-4 py-1 ml-1 rounded-full bg-purple-100 text-[#5c3be7] uppercase text-xs font-bold">We're
+                    hiring</span>
+                </a>
+              </li>
+              <li class="my-4"><a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                  Shop
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- CONNECT FOOTER MENU -->
+          <div class="hidden md:block">
+            <span class="text-[#372580] text-[1.125rem] leading-[1.55] font-bold mb-8">Connect</span>
+            <ul>
+              <li class="my-4">
+                <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">Blog</a>
+              </li>
+              <li class="my-4">
+                <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">Help and support
+                </a>
+              </li>
+              <li class="my-4">
+                <a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                  Partners and affiliates
+                </a>
+              </li>
+              <li class="my-4">
+                <a target="_blank" href="#" class="text-[#372580] hover:text-[#6d4aff] transition-all">Press and media
+                </a>
+              </li>
+              <li class="my-4"><a class="text-[#372580] hover:text-[#6d4aff] transition-all" href="#">
+                  Contact us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- FOOTER DIVIDER -->
+        <hr class="border-[#e2dbff] my-12 md:my-16 lg:my-12">
+        <!-- FOOTER PRIMARY 2 -->
+        <div class="grid sm:grid-cols-1 md:grid-cols-5 gap-4 mb-12 lg:mb-0">
+          <!-- PROTON AG -->
+          <div class="flex flex-col flex-nowrap w-max mb-10 lg:mb-0 text-xs">
+            <span itemprop="name" class="font-bold mb-3">Proton AG</span>
+            <div class="flex flex-col flex-nowrap w-max text-body"><span>Route de la Galaise 32</span>
+              <span>1228 Plan-les-Ouates</span>
+              <span>Geneva, Switzerland</span>
+            </div>
+          </div>
+          <!-- BUILT WITH SUPPORT -->
+          <div class="md:col-span-3 w-full flex">
+            <div class="flex flex-col">
+              <span class="font-bold mb-3 text-xs">Built with support from</span>
+              <div class="flex flex-row gap-4">
+                <div class="flex flex-nowrap grow">
+                  <div class="mr-4 md:mr-2"><img src="images/swiss-logo.svg" alt="Swiss Confederation"></div>
+                  <div class="text-xs text-gray-700">
+                    <div lang="de">Schweizerische Eidgenossenschaft</div>
+                    <div lang="fr">Confédération Suisse</div>
+                    <div lang="it">Confederazione Svizzera</div>
+                    <div lang="rm">Confederaziun Svizra</div>
+                    <div lang="en" class="mt-1">Swiss Confederation</div>
+                    <div class="font-bold mt-1">Innosuisse - Swiss Innovation Agency</div>
+                  </div>
+                </div>
+                <div class="flex flex-column flex-nowrap grow">
+                  <div class="mr-4 md:mr-2">
+                    <img class="md:h-16" src="images/european-flag.svg" alt="European flag">
+                  </div>
+                  <div class="text-xs text-gray-700">This project is supported<br>by the European Union's<br>Horizon
+                    2020
+                    program<br>(Grant No 848554)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- LANGUAGE DROPDOWN -->
+          <div class="flex flex-column flex-nowrap w-max md:justify-self-end self-start">
+            <div class="flex relative" x-data="{
+                  isLangDropdownOpen: false,
+                  selectedLang: 'English',
+                  languages: [
+                    'English',
+                    'Deutsch',
+                    'Español (España)', 
+                    'Français', 
+                    'Latinoamérica',
+                    'Русский',
+                    'Italiano',
+                    'Polski',
+                    'Português (Brasil)',
+                    'Nederlands'
+                  ]
+                }">
+              <button type="button" @click="isLangDropdownOpen = !isLangDropdownOpen"
+                class="flex flex-nowrap content-center items-center relative focus:outline-none focus-visible:ring focus-visible:ring-[#c5b7ff] mt-4 md:mt-0 btn rounded-full font-bold text-[1rem] py-1.5 px-5 leading-[1.5] border-2  "
+                :class="isLangDropdownOpen ? 'text-white bg-[#4a2dc5] border-transparent' : 'border-[#6d4aff] text-[#6d4aff]'">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" class="w-5 h-5 mr-3">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                  </path>
+                </svg>
+                <span class="block truncate" x-text="selectedLang"></span>
+                <span class="pointer-events-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                    class="w-6 h-6 ml-4 transition-all" :class="{'rotate-180' : isLangDropdownOpen}">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></span>
+              </button>
+              <ul x-show="isLangDropdownOpen" @click.away="isLangDropdownOpen = false"
+                class="-top-4 md:-left-24 left-0 transform -translate-y-full absolute z-10 w-full p-3 overflow-auto text-base bg-white rounded-lg shadow-md max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm border border-gray-100 space-y-1 min-w-[16rem]">
+                <template x-for="lang in languages">
+                  <li
+                    class="cursor-pointer select-none relative py-3 px-4 flex items-center hover:bg-[#efebff] rounded-lg text-base focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-[#c5b7ff] "
+                    :class="lang === selectedLang ? 'text-[#6d4aff] bg-[#f3f4f6]' : 'text-[#111827]'" @click="
+                      selectedLang = lang;
+                      isLangDropdownOpen = false
+                    ">
+                    <span class="block truncate font-bold" x-text="lang"></span>
+                    <span class="absolute right-2 pl-3">
+                      <svg x-show="lang === selectedLang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor" class="w-5 h-5 text-[#6d4aff]">
+                        <path fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </span>
+                  </li>
+                </template>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
   </main>
 </body>
 
